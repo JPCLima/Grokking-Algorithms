@@ -18,3 +18,11 @@ Selection Sort is not very fast, The Quicksort is a faster sorting algorithm, ta
 
 
 - Create a function to sort the the array from the samllest to the largest 
+```python
+  def selectionSort(arr):
+    new_arr = []
+    for i in range(len(arr)):
+        smallest = findSmallest(arr)
+        new_arr.append(arr.pop(smallest))
+    return new_arr
+```
