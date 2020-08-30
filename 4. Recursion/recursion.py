@@ -17,7 +17,7 @@ def sum_list(list_n):
     if list_n == []:
         return 0
     else:
-        return sum_list(list_n[0:])
+        return list_n[0] + sum_list(list_n[1:])
 
 
 print(fact(20))
